@@ -2,23 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- Responsive meta tag -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- SEO & Social Meta Tags -->
   <meta name="description" content="Portfolio of Sean G. Sanchez – AI Chatbot Developer & Automation Strategist.">
   <meta property="og:title" content="Sean G. Sanchez – AI Chatbot Developer">
   <meta property="og:description" content="Explore innovative chatbot development and automation strategies with an institutional design.">
-  <meta property="og:image" content="https://seangs3590.github.io/Chatbot-portfolio/profile.jpg">
-  <meta name="twitter:card" content="summary_large_image">
   
   <title>Sean G. Sanchez – AI Chatbot Developer</title>
   
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
   
   <style>
-    /* Reset */
     *, *::before, *::after {
       margin: 0;
       padding: 0;
@@ -27,19 +21,16 @@
     body {
       font-family: 'Source Sans Pro', sans-serif;
       color: #333;
-      line-height: 1.6;
       background: #fff;
+      line-height: 1.6;
     }
-    
-    /* Color Palette */
+
     :root {
-      --gov-blue: #005ea2;    /* Strong government blue */
-      --gov-green: #107e3e;   /* Strong government green */
+      --gov-blue: #005ea2;
+      --gov-green: #107e3e;
       --light-gray: #f1f1f1;
-      --dark-gray: #333;
     }
-    
-    /* Fixed Header Navigation */
+
     header.site-header {
       background: var(--light-gray);
       border-bottom: 4px solid var(--gov-blue);
@@ -73,207 +64,12 @@
       text-decoration: none;
       font-weight: 600;
     }
-    header.site-header nav ul li a:hover,
-    header.site-header nav ul li a:focus {
+    header.site-header nav ul li a:hover {
       color: var(--gov-green);
     }
-    
-    /* Hero Banner */
+
     .hero {
       background: var(--gov-blue);
       color: #fff;
       text-align: center;
-      padding: 3rem 1rem;
-    }
-    .hero img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 3px solid #fff;
-      margin-bottom: 1rem;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .hero p {
-      font-size: 1.25rem;
-    }
-    
-    /* Content Container */
-    .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    
-    /* Section Styling (Institutional style) */
-    section {
-      margin-bottom: 2rem;
-      padding: 1.5rem 1.5rem 1.5rem 2rem;
-      border-left: 8px solid var(--gov-green);
-      background: #fff;
-    }
-    
-    section h2 {
-      margin-bottom: 0.5rem;
-      font-size: 1.75rem;
-      color: var(--gov-blue);
-      border-bottom: 2px solid var(--gov-green);
-      padding-bottom: 0.25rem;
-    }
-    section p,
-    section ul {
-      margin-bottom: 1rem;
-    }
-    section ul {
-      list-style: disc inside;
-      margin-left: 1.5rem;
-    }
-    
-    /* Code Blocks */
-    pre {
-      background: #f1f1f1;
-      padding: 1rem;
-      overflow-x: auto;
-      font-size: 0.9rem;
-      border-left: 4px solid var(--gov-blue);
-    }
-    
-    /* Buttons */
-    button {
-      background: var(--gov-blue);
-      color: #fff;
-      border: none;
-      padding: 0.75rem 1rem;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: 600;
-    }
-    button:hover {
-      background: var(--gov-green);
-    }
-    
-    /* Footer */
-    footer {
-      background: var(--gov-blue);
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-    
-    /* Responsive */
-    @media (max-width: 600px) {
-      header.site-header .container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      header.site-header nav ul {
-        flex-direction: column;
-        margin-top: 0.5rem;
-      }
-      header.site-header nav ul li {
-        margin: 0.5rem 0;
-      }
-    }
-  </style>
-</head>
-<body>
-  <!-- Site Header Navigation -->
-  <header class="site-header">
-    <div class="container">
-      <div class="logo">Sean G. Sanchez</div>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#certs">Certifications</a></li>
-          <li><a href="#demos">Demos</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  
-  <!-- Hero Banner -->
-  <section class="hero">
-    <img src="https://seangs3590.github.io/Chatbot-portfolio/profile.jpg" alt="Sean G. Sanchez" loading="lazy">
-    <h1>Sean G. Sanchez</h1>
-    <p>AI Chatbot Developer &amp; Automation Strategist</p>
-  </section>
-  
-  <!-- Main Content -->
-  <div class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I create AI-driven chatbots with advanced natural language processing and automation techniques. My work focuses on delivering innovative solutions that enhance user engagement and streamline operations in a professional, institutional setting.</p>
-    </section>
-    
-    <section id="services">
-      <h2>Services</h2>
-      <ul>
-        <li>Custom Chatbot Development (GPT, Rasa, Dialogflow)</li>
-        <li>Conversational UX Design &amp; Persona Crafting</li>
-        <li>No‑code Chatbot Deployment (ManyChat, Landbot)</li>
-        <li>System &amp; API Integrations</li>
-        <li>Performance Optimization &amp; Analytics</li>
-      </ul>
-    </section>
-    
-    <section id="certs">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Certified Rasa Developer</li>
-        <li>Google Dialogflow CX Advanced</li>
-        <li>Python for Everybody – University of Michigan</li>
-        <li>Conversation Design Institute Certification</li>
-      </ul>
-    </section>
-    
-    <section id="demos">
-      <h2>Code Demos</h2>
-      <article>
-        <h3>Python Snippet</h3>
-        <pre><code>def greet(name):
-    return f"Hello, {name}! Welcome to the future of chatbots."
-
-print(greet("Visitor"))</code></pre>
-        <button onclick="alert('Hello, Visitor! Welcome to the future of chatbots.')">Run Python</button>
-      </article>
-      <article>
-        <h3>PHP Snippet</h3>
-        <pre><code>&lt;?php
-function greet($name) {
-    return "Hello, $name! Welcome to the future of chatbots.";
-}
-echo greet("Visitor");
-?&gt;</code></pre>
-        <button onclick="alert('Hello, Visitor! Welcome to the future of chatbots.')">Run PHP</button>
-      </article>
-    </section>
-    
-    <section id="gallery">
-      <h2>Gallery</h2>
-      <img src="https://seangs3590.github.io/Chatbot-portfolio/project-preview.jpg" alt="Chatbot Project Screenshot" style="width: 100%;">
-    </section>
-    
-    <section id="contact">
-      <h2>Contact</h2>
-      <form action="#" method="POST" novalidate>
-         <input type="text" name="name" placeholder="Your Name" required>
-         <input type="email" name="email" placeholder="Your Email" required>
-         <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-         <button type="submit">Send Message</button>
-      </form>
-      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    </section>
-  </div>
-  
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Sean G. Sanchez. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+      padding:

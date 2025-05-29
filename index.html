@@ -21,7 +21,11 @@
   <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" rel="stylesheet">
   
   <style>
-    /* CSS Variables for theming & consistency */
+    /* Global Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    
     :root {
       --primary-color: #0f172a;
       --secondary-color: #3b82f6;
@@ -30,10 +34,10 @@
       --dark-background: #1e293b;
       --text-color: #1f2937;
       --header-text: #e0f2fe;
-      --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       --transition-speed: 0.3s;
     }
-
+    
     html {
       scroll-behavior: smooth;
       font-size: 16px;
@@ -50,7 +54,7 @@
     header {
       background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
       color: white;
-      padding: 4rem 1rem 3rem;
+      padding: 3rem 1rem 2.5rem;
       text-align: center;
     }
     
@@ -77,9 +81,13 @@
     }
     
     nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       background-color: var(--dark-background);
-      padding: 0.75rem 0;
+      padding: 1rem 0;
       text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     
     nav a {
@@ -97,12 +105,12 @@
     }
     
     main {
-      max-width: 1140px;
+      max-width: 1200px;
       margin: 2rem auto;
       padding: 2rem;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
     }
     
     section {
@@ -167,7 +175,7 @@
     .gallery-img {
       width: 100%;
       border-radius: 0.75rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       transition: transform var(--transition-speed);
     }
     
@@ -200,7 +208,6 @@
       outline: none;
     }
     
-    /* Responsive styles */
     @media (max-width: 600px) {
       header h1 { font-size: 2rem; }
       header p { font-size: 1.25rem; }
@@ -209,7 +216,6 @@
 </head>
 <body>
   <header role="banner">
-    <!-- Using absolute URL for the profile image -->
     <img src="https://seangs3590.github.io/Chatbot-portfolio/profile.jpg" alt="Photo of Sean G. Sanchez" class="profile-image" loading="lazy">
     <h1>Sean G. Sanchez</h1>
     <p>AI Chatbot Developer &amp; Automation Strategist</p>
@@ -229,7 +235,7 @@
       <h2>🧑‍💼 About Me</h2>
       <p>I am a seasoned developer specializing in AI-driven chatbots with expertise in natural language processing, dialogue design, and automation. I create intelligent bots that serve business needs, boost user engagement, and streamline operations.</p>
     </section>
-  
+    
     <section id="services" tabindex="0">
       <h2>💼 Services</h2>
       <ul>
@@ -240,7 +246,7 @@
         <li>Performance optimization and analytics reporting</li>
       </ul>
     </section>
-  
+    
     <section id="certs" tabindex="0">
       <h2>📜 Certifications</h2>
       <ul>
@@ -250,7 +256,7 @@
         <li>Conversation Design Institute Certification</li>
       </ul>
     </section>
-  
+    
     <section id="demos" tabindex="0">
       <h2>📂 Code Demos</h2>
       <article class="highlight">
@@ -272,13 +278,12 @@ echo greet("Visitor");
         <button onclick="alert('Hello, Visitor! Welcome to the future of chatbots.')">▶ Run PHP</button>
       </article>
     </section>
-  
+    
     <section id="gallery" tabindex="0">
       <h2>📸 Gallery</h2>
-      <!-- Using absolute URL for the gallery image -->
       <img src="https://seangs3590.github.io/Chatbot-portfolio/project-preview.jpg" alt="Chatbot Project Screenshot" class="gallery-img" loading="lazy">
     </section>
-  
+    
     <section id="contact" tabindex="0">
       <h2>📬 Contact</h2>
       <form action="#" method="POST" novalidate>
@@ -319,7 +324,6 @@ echo greet("Visitor");
   </script>
 </body>
 </html>
-
 
 
 

@@ -4,72 +4,131 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <meta name="description" content="Portfolio of Sean G. Sanchez – AI Chatbot Developer & Automation Strategist.">
-  <meta property="og:title" content="Sean G. Sanchez – AI Chatbot Developer">
-  <meta property="og:description" content="Explore innovative chatbot development and automation strategies with an institutional design.">
-  
   <title>Sean G. Sanchez – AI Chatbot Developer</title>
   
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   
   <style>
-    *, *::before, *::after {
+    /* Global Styles */
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f7f9fc;
+      color: #333;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Source Sans Pro', sans-serif;
-      color: #333;
-      background: #fff;
-      line-height: 1.6;
     }
 
     :root {
-      --gov-blue: #005ea2;
-      --gov-green: #107e3e;
-      --light-gray: #f1f1f1;
+      --primary: #4A90E2;
+      --secondary: #7ED321;
+      --background: #ffffff;
+      --text-light: #555;
     }
 
-    header.site-header {
-      background: var(--light-gray);
-      border-bottom: 4px solid var(--gov-blue);
-      padding: 1rem 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    header.site-header .container {
-      max-width: 1200px;
-      margin: 0 auto;
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
       padding: 0 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    header.site-header .logo {
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: var(--gov-blue);
-    }
-    header.site-header nav ul {
-      list-style: none;
-      display: flex;
-    }
-    header.site-header nav ul li {
-      margin-left: 1rem;
-    }
-    header.site-header nav ul li a {
-      color: var(--gov-blue);
-      text-decoration: none;
-      font-weight: 600;
-    }
-    header.site-header nav ul li a:hover {
-      color: var(--gov-green);
     }
 
-    .hero {
-      background: var(--gov-blue);
-      color: #fff;
+    /* Header */
+    header {
       text-align: center;
-      padding:
+      padding: 2rem 0;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 12px;
+      margin: 0 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* Sections */
+    section {
+      background: var(--background);
+      padding: 2rem;
+      margin: 1rem 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 1rem;
+      padding: 0.5rem;
+      background: var(--secondary);
+      color: #fff;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      display: inline-block;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sean G. Sanchez</h1>
+    <p>AI Chatbot Developer & Automation Strategist</p>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I specialize in developing AI-powered chatbots with advanced automation strategies, improving user engagement and business efficiency.</p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li>Chatbot Development</li>
+        <li>Conversational UX Design</li>
+        <li>API Integrations</li>
+      </ul>
+    </section>
+
+    <section id="certs">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Certified Rasa Developer</li>
+        <li>Google Dialogflow CX Advanced</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Sean G. Sanchez. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -15,105 +15,139 @@
   <title>Sean G. Sanchez – AI Chatbot Developer</title>
   
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
   
   <style>
-    /* Global Reset */
+    /* Basic Reset */
     *, *::before, *::after {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f7f7f7;
-      color: #2c3e50;
       line-height: 1.6;
-    }
-    :root {
-      --blue: #2980b9;     /* Professional Blue */
-      --green: #27ae60;    /* Professional Green */
-      --white: #ffffff;
-      --bg-light: #f7f7f7;
-      --text-color: #2c3e50;
-      --transition: 0.3s ease;
+      color: #2c3e50;
+      background: #fff;
     }
     
-    /* Navigation */
-    nav {
-      position: fixed;
+    /* Color Palette */
+    :root {
+      --primary-blue: #2980b9;
+      --accent-green: #27ae60;
+      --light-gray: #f7f7f7;
+    }
+    
+    /* Fixed Navigation Header */
+    header.site-header {
+      background: var(--light-gray);
+      border-bottom: 3px solid var(--primary-blue);
+      padding: 1rem 0;
+      text-align: center;
+      position: sticky;
       top: 0;
-      left: 0;
-      right: 0;
-      background: var(--blue);
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      z-index: 1000;
+      z-index: 100;
     }
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-    }
-    nav ul li {
-      margin: 0 1rem;
-    }
-    nav ul li a {
-      color: var(--white);
+    header.site-header nav a {
+      color: var(--primary-blue);
       text-decoration: none;
       font-weight: 600;
-      transition: color var(--transition);
+      margin: 0 1rem;
+      font-size: 1rem;
     }
-    nav ul li a:hover,
-    nav ul li a:focus {
-      color: var(--green);
+    header.site-header nav a:hover,
+    header.site-header nav a:focus {
+      color: var(--accent-green);
     }
     
-    /* Hero Section */
-    header {
-      margin-top: 60px; /* room for fixed nav */
-      background: linear-gradient(135deg, var(--blue), var(--green));
-      color: var(--white);
+    /* Hero Banner */
+    .hero {
+      background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+      color: white;
+      padding: 3rem 1rem;
       text-align: center;
-      padding: 4rem 1rem;
-      min-height: 50vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
     }
-    header .profile-image {
-      width: 140px;
-      height: 140px;
+    .hero img {
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid var(--white);
-      margin-bottom: 1.5rem;
-    }
-    header h1 {
-      font-size: 2.5rem;
+      border: 3px solid white;
       margin-bottom: 1rem;
     }
-    header p {
-      font-size: 1.25rem;
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.125rem;
     }
     
-    /* Main Content */
+    /* Main Content Container */
     main {
-      max-width: 1200px;
-      margin: 3rem auto;
-      padding: 1rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
     
-    /* Section Cards */
+    /* Section Styling */
     section {
-      background: var(--white);
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0
-
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-left: 5px solid var(--accent-green);
+    }
+    section h2 {
+      font-size: 1.5rem;
+      color: var(--primary-blue);
+      margin-bottom: 0.75rem;
+      border-bottom: 2px solid var(--accent-green);
+      padding-bottom: 0.5rem;
+    }
+    section p {
+      margin: 0.75rem 0;
+    }
+    section ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+      list-style-type: disc;
+    }
+    
+    /* Code Block Styling */
+    pre {
+      background: #ecf0f1;
+      padding: 1rem;
+      overflow-x: auto;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    
+    /* Button Styling */
+    button {
+      background: var(--primary-blue);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.25rem;
+      font-size: 1rem;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: var(--accent-green);
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--primary-blue);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+      margin-top: 2rem;
+    }
+    
+    /* Responsive */
+    @media (max-width: 600px) {
+      header.site-header nav a { margin: 0 0.5rem; }
+      main { padding: 0 0.5rem; }
+    }
+  </style>
+</
